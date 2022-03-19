@@ -23,6 +23,7 @@ header {
     background-color: var(--redbrown);
     color: #fff;
     padding: 1rem;
+    height: 6.5rem;
 }
 
 nav ul {
@@ -40,7 +41,7 @@ img {
  }
 
 picture img {
-    height: 100vh;
+    height: calc(100vh - 6.5rem);
     object-fit: cover;
 }
 
@@ -53,11 +54,15 @@ picture img {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-}
 
-.hero .text-wrapper {
     position: absolute;
-    max-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1rem;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 40%);
 }
 
 .hero h1 {
@@ -66,6 +71,7 @@ picture img {
     font-weight:bold;
     color: lightgray;
     line-height: 1;
+    margin: 0;
 }
 
 .hero p {
@@ -74,10 +80,11 @@ picture img {
     color: lightgray;
     text-indent: 0;
     line-height: 1.15;
+    margin-top: 1.4rem;
 }
 
 main {
-    max-width: 60rem;
+    max-width: 70rem;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -99,27 +106,24 @@ aside p{
 
 h1 {
     font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Lato', sans-serif;
     font-weight:bold;
     color: var(--redbrown);
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Lato', sans-serif;
     color: var(--redbrown);
+    text-align: center;
 }
 
 h3 {
     font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
     color:var(--redbrown);
+    text-align: center;
 }
 
 p {
